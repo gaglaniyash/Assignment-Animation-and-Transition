@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    font-family: 'ubuntu', sans-serif;
+}
+
+.profile-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+img {
+    border: 1px solid;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    border: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.5s, background-color 0.5s;
+}
+
+.profile-card p::before {
+    content: '"';
+    font-size: 1.5em;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+.profile-card p::after {
+    content: '"';
+    font-size: 1.5em;
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+}
+
+.profile-card:hover {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.profile-card:hover h2 {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px;
+}
+
+.profile-card h2 {
+    margin: 10px 0;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.profile-card ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.profile-card li {
+    margin: 5px 0;
+    padding: 10px;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.profile-card li:nth-child(2) {
+    background-color: #007BFF;
+}
+
+.profile-card li:nth-child(3) {
+    background-color: #28A745; 
+}
+
+.profile-card li:nth-child(4) {
+    background-color: #FFC107; 
+    color: black; 
+}
+
+.profile-card li:nth-child(5) {
+    background-color: #17A2B8;
+}
+
+.profile-card li:nth-last-child(1){
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.profile-card button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    background-color: #0056b3;
+}
+
+.profile-card button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    color: #fff; /* Keep text color white */
+}
+
+::selection {
+    background-color: #007BFF;
+    color: white;
+}
